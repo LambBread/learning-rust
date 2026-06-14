@@ -1,7 +1,7 @@
-fn custom_fib(num: i32) -> i64
+fn custom_fib(num: i32) -> f64
 {
-    let mut f0 : i64 = 0;
-    let mut f1 : i64 = 1;
+    let mut f0 : f64 = 0.0;
+    let mut f1 : f64 = 1.0;
 
     if num == 0
     {
@@ -26,7 +26,7 @@ fn custom_fib(num: i32) -> i64
 }
 
 fn main() {
-    for i in 1..=20
+    for i in 1..=1300
     {
         println!("{}", custom_fib(i));
     }
